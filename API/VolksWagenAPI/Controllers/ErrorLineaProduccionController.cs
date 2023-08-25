@@ -133,6 +133,31 @@ namespace VolksWagenAPI.Controllers
             return NoContent();
         }
 
+        // ... (otros métodos del controlador)
+
+        // POST: api/ErrorLineaProduccion/SubirNivelErrorLineaProduccion/{id}
+        [HttpPost("SubirNivelErrorLineaProduccion/{id}")]
+        public async Task<IActionResult> SubirNivelErrorLineaProduccion(int id)
+        {
+            if (_context.ErrorLineaProduccions == null)
+            {
+                return NotFound();
+            }
+
+            var errorLineaProduccion = await _context.ErrorLineaProduccions.FindAsync(id);
+            if (errorLineaProduccion == null)
+            {
+                return NotFound();
+            }
+
+            // Incrementar el nivel del error de la línea de producción
+            errorLineaProduccion.Nivel += 1;
+            _context.Entry(errorLineaProduccion).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
 
         // GET: api/ErrorLineaProduccion/ByUserRole/{userId}
         [HttpGet("ByUserRole/{userId}")]

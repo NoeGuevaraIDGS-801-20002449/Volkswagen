@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJ8ZXeNpQ2rna339vTX/JVR3j5jDtW52HEPX9wsVwZtYq8wcDdwrDhg2OA/m1uk6a7czirMZ6QkcXL7OYmBjGA==",
+  "dgSpecHash": "NpoYzDeYzC6m5QGQ7OwMKKG7fqc0Pmtv29wJhOx1woMym2sY5uDWpSRviFCPbr3osXqqRTH9GOkgmvfiECikdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\losim\\Desktop\\VolksWagenAPI\\VolksWagenAPI\\VolksWagenAPI.csproj",
+  "projectFilePath": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\losim\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\losim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

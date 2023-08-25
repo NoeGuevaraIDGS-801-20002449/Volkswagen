@@ -133,6 +133,31 @@ namespace VolksWagenAPI.Controllers
         }
 
 
+        // POST: api/Errores/SubirNivelError/{id}
+        [HttpPost("SubirNivelError/{id}")]
+        public async Task<IActionResult> SubirNivelError(int id)
+        {
+            if (_context.Errores == null)
+            {
+                return NotFound();
+            }
+
+            var errore = await _context.Errores.FindAsync(id);
+            if (errore == null)
+            {
+                return NotFound();
+            }
+
+            // Incrementar el nivel del error
+            errore.Nivel += 1;
+            _context.Entry(errore).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+
+
 
         // GET: api/Errores/ByUserRole/{userId}
         [HttpGet("ByUserRole/{userId}")]

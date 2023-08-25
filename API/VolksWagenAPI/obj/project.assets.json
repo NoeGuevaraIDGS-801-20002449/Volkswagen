@@ -10904,11 +10904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\losim\\Desktop\\VolksWagenAPI\\VolksWagenAPI\\VolksWagenAPI.csproj",
+      "projectUniqueName": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj",
       "projectName": "VolksWagenAPI",
-      "projectPath": "C:\\Users\\losim\\Desktop\\VolksWagenAPI\\VolksWagenAPI\\VolksWagenAPI.csproj",
+      "projectPath": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj",
       "packagesPath": "C:\\Users\\losim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\losim\\Desktop\\VolksWagenAPI\\VolksWagenAPI\\obj\\",
+      "outputPath": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\losim\\AppData\\Roaming\\NuGet\\NuGet.Config",

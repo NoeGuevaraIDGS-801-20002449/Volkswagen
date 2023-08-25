@@ -131,6 +131,31 @@ namespace VolksWagenAPI.Controllers
             return NoContent();
         }
 
+        // ... (otros métodos del controlador)
+
+        // POST: api/ErrorHerramientas/SubirNivelErrorHerramienta/{id}
+        [HttpPost("SubirNivelErrorHerramienta/{id}")]
+        public async Task<IActionResult> SubirNivelErrorHerramienta(int id)
+        {
+            if (_context.ErrorHerramienta == null)
+            {
+                return NotFound();
+            }
+
+            var errorHerramientum = await _context.ErrorHerramienta.FindAsync(id);
+            if (errorHerramientum == null)
+            {
+                return NotFound();
+            }
+
+            // Incrementar el nivel del error de la herramienta
+            errorHerramientum.Nivel += 1;
+            _context.Entry(errorHerramientum).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
 
         // GET: api/ErrorHerramientas/ByUserRole/{userId}
         [HttpGet("ByUserRole/{userId}")]
