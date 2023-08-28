@@ -4,12 +4,12 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:25536",
+      "applicationUrl": "http://localhost:25432",
       "sslPort": 44337
     }
   },
   "profiles": {
-    "VolksWagenAPI": {
+    "VolkswagenAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

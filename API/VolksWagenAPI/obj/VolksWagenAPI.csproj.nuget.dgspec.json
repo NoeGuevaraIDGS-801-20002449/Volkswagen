@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj": {}
+    "C:\\Users\\losim\\Desktop\\VolkswagenAPI\\VolkswagenAPI\\VolkswagenAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj": {
+    "C:\\Users\\losim\\Desktop\\VolkswagenAPI\\VolkswagenAPI\\VolkswagenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj",
-        "projectName": "VolksWagenAPI",
-        "projectPath": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\VolksWagenAPI.csproj",
+        "projectUniqueName": "C:\\Users\\losim\\Desktop\\VolkswagenAPI\\VolkswagenAPI\\VolkswagenAPI.csproj",
+        "projectName": "VolkswagenAPI",
+        "projectPath": "C:\\Users\\losim\\Desktop\\VolkswagenAPI\\VolkswagenAPI\\VolkswagenAPI.csproj",
         "packagesPath": "C:\\Users\\losim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\losim\\Desktop\\VolksWagen\\API\\VolksWagenAPI\\obj\\",
+        "outputPath": "C:\\Users\\losim\\Desktop\\VolkswagenAPI\\VolkswagenAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\losim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,13 +42,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.21, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.21, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

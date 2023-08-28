@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using VolksWagenAPI.Models;
+using VolkswagenAPI.Models;
 
-namespace VolksWagenAPI.Controllers
+namespace VolkswagenAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -90,24 +90,11 @@ namespace VolksWagenAPI.Controllers
               return Problem("Entity set 'VolksWagenContext.ErrorPersonals'  is null.");
           }
             _context.ErrorPersonals.Add(errorPersonal);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (ErrorPersonalExists(errorPersonal.Id))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetErrorPersonal", new { id = errorPersonal.Id }, errorPersonal);
         }
+
         // DELETE: api/ErrorPersonal/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteErrorPersonal(int id)
@@ -192,13 +179,12 @@ namespace VolksWagenAPI.Controllers
                     return 1;
                 case "supervisor":
                     return 2;
-                case "administrador":
+                case "directivo":
                     return 3;
                 default:
                     return null; // Si el rol no coincide, nivel nulo
             }
         }
-
         private bool ErrorPersonalExists(int id)
         {
             return (_context.ErrorPersonals?.Any(e => e.Id == id)).GetValueOrDefault();

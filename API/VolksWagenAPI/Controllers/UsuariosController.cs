@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using VolksWagenAPI.Models;
+using VolkswagenAPI.Models;
 
-namespace VolksWagenAPI.Controllers
+namespace VolkswagenAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -90,21 +90,7 @@ namespace VolksWagenAPI.Controllers
               return Problem("Entity set 'VolksWagenContext.Usuarios'  is null.");
           }
             _context.Usuarios.Add(usuario);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (UsuarioExists(usuario.IdUsuario))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetUsuario", new { id = usuario.IdUsuario }, usuario);
         }
@@ -131,7 +117,6 @@ namespace VolksWagenAPI.Controllers
 
             return NoContent();
         }
-
 
         private bool UsuarioExists(int id)
         {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolksWagenAPI", "VolksWagenAPI\VolksWagenAPI.csproj", "{8A2576BC-20FD-4C49-8A1D-72558BEFE865}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolkswagenAPI", "VolkswagenAPI\VolkswagenAPI.csproj", "{8743BBD6-22D8-40C8-A559-9B1A260BCF79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8A2576BC-20FD-4C49-8A1D-72558BEFE865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A2576BC-20FD-4C49-8A1D-72558BEFE865}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A2576BC-20FD-4C49-8A1D-72558BEFE865}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A2576BC-20FD-4C49-8A1D-72558BEFE865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8743BBD6-22D8-40C8-A559-9B1A260BCF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8743BBD6-22D8-40C8-A559-9B1A260BCF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8743BBD6-22D8-40C8-A559-9B1A260BCF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8743BBD6-22D8-40C8-A559-9B1A260BCF79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2288FF3D-6817-4348-9619-9E2FECB87E55}
+		SolutionGuid = {EE83C03A-3FE1-4053-B9F1-EBCCF5A79AF0}
 	EndGlobalSection
 EndGlobal

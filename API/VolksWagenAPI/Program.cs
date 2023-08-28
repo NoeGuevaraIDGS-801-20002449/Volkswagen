@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using VolksWagenAPI.Models;
+using VolkswagenAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

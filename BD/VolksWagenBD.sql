@@ -2,104 +2,99 @@
 IF EXISTS (SELECT * FROM sys.databases WHERE name = 'VolksWagen')
     DROP DATABASE VolksWagen;
 
-go
+GO
 
 -- Crear la base de datos
 CREATE DATABASE VolksWagen;
 
-go
+GO
 
 -- Usar la base de datos creada
 USE VolksWagen;
 
-go
-
-
+GO
 
 -- Tabla de usuarios
 CREATE TABLE usuarios (
-    id_usuario INT PRIMARY KEY,
-    nombre_usuario VARCHAR(50),
-    contraseña VARCHAR(100),
-    rol VARCHAR(20),
-    estatus VARCHAR(20)
+    id_usuario INT PRIMARY KEY IDENTITY(1,1),
+    nombre_usuario VARCHAR(150),
+    contraseña VARCHAR(150),
+    rol VARCHAR(150),
+    estatus VARCHAR(150)
 );
 
-go
+GO
 
 -- Tabla de errores
 CREATE TABLE errores (
-    id INT PRIMARY KEY,
-    tipo_error VARCHAR(20),
-    descripción TEXT,
+    id INT PRIMARY KEY IDENTITY(1,1),
+    tipo_error VARCHAR(150),
+    descripción VARCHAR(MAX),
     fecha DATE,
-    hora TIME,
-    usuario_reporte VARCHAR(50),
-    estado VARCHAR(20),
-    prioridad VARCHAR(10),
-    notas_solución TEXT,
-    causa_raíz TEXT,
+    hora VARCHAR(10),
+    usuario_reporte VARCHAR(150),
+    estado VARCHAR(150),
+    prioridad VARCHAR(150),
+    notas_solución VARCHAR(MAX),
+    causa_raíz VARCHAR(MAX),
     nivel INT,
-    impacto VARCHAR(100),
-    frecuencia VARCHAR(50)
+    impacto VARCHAR(150),
+    frecuencia VARCHAR(150)
 );
 
-go
+GO
 
 -- Tabla de errores personales
 CREATE TABLE error_personal (
-    id INT PRIMARY KEY,
-    tipo_error VARCHAR(20),
-    descripción TEXT,
+    id INT PRIMARY KEY IDENTITY(1,1),
+    tipo_error VARCHAR(150),
+    descripción VARCHAR(MAX),
     fecha DATE,
-    hora TIME,
-    usuario_reporte VARCHAR(50),
-    estado VARCHAR(20),
-    prioridad VARCHAR(10),
-    notas_solución TEXT,
-    causa_raíz TEXT,
+    hora VARCHAR(10),
+    usuario_reporte VARCHAR(150),
+    estado VARCHAR(150),
+    prioridad VARCHAR(150),
+    notas_solución VARCHAR(MAX),
+    causa_raíz VARCHAR(MAX),
     nivel INT,
-    impacto VARCHAR(100),
-    frecuencia VARCHAR(50),
-    FOREIGN KEY (id) REFERENCES errores(id)
+    impacto VARCHAR(150),
+    frecuencia VARCHAR(150)
 );
 
-go
+GO
 
 -- Tabla de errores de herramienta
 CREATE TABLE error_herramienta (
-    id INT PRIMARY KEY,
-    tipo_error VARCHAR(20),
-    descripción TEXT,
+    id INT PRIMARY KEY IDENTITY(1,1),
+    tipo_error VARCHAR(150),
+    descripción VARCHAR(MAX),
     fecha DATE,
-    hora TIME,
-    usuario_reporte VARCHAR(50),
-    estado VARCHAR(20),
-    prioridad VARCHAR(10),
-    notas_solución TEXT,
-    causa_raíz TEXT,
+    hora VARCHAR(10),
+    usuario_reporte VARCHAR(150),
+    estado VARCHAR(150),
+    prioridad VARCHAR(150),
+    notas_solución VARCHAR(MAX),
+    causa_raíz VARCHAR(MAX),
     nivel INT,
-    impacto VARCHAR(100),
-    frecuencia VARCHAR(50),
-    FOREIGN KEY (id) REFERENCES errores(id)
+    impacto VARCHAR(150),
+    frecuencia VARCHAR(150)
 );
 
-go
+GO
 
 -- Tabla de errores de línea de producción
 CREATE TABLE error_linea_produccion (
-    id INT PRIMARY KEY,
-    tipo_error VARCHAR(20),
-    descripción TEXT,
+    id INT PRIMARY KEY IDENTITY(1,1),
+    tipo_error VARCHAR(150),
+    descripción VARCHAR(MAX),
     fecha DATE,
-    hora TIME,
-    usuario_reporte VARCHAR(50),
-    estado VARCHAR(20),
-    prioridad VARCHAR(10),
-    notas_solución TEXT,
-    causa_raíz TEXT,
+    hora VARCHAR(10),
+    usuario_reporte VARCHAR(150),
+    estado VARCHAR(150),
+    prioridad VARCHAR(150),
+    notas_solución VARCHAR(MAX),
+    causa_raíz VARCHAR(MAX),
     nivel INT,
-    impacto VARCHAR(100),
-    frecuencia VARCHAR(50),
-    FOREIGN KEY (id) REFERENCES errores(id)
+    impacto VARCHAR(150),
+    frecuencia VARCHAR(150)
 );

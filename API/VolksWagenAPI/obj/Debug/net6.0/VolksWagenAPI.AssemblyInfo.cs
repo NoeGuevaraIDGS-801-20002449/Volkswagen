@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("VolksWagenAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("VolkswagenAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("VolksWagenAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("VolksWagenAPI")]
+[assembly: System.Reflection.AssemblyProductAttribute("VolkswagenAPI")]
+[assembly: System.Reflection.AssemblyTitleAttribute("VolkswagenAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
